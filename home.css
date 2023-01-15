@@ -7,13 +7,14 @@
 body {
     color: white;
     background: rgb(22, 20, 41);
+    font-family: 'poppins';
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: gray;
+    padding: 0 5%;
 }
 
 .navlink {
@@ -25,23 +26,30 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-}
-
-li {
-    float: left;
+    display: flex;
 }
 
 li a {
     display: block;
-    color: rgb(255, 0, 0);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    color: white;
 }
 
 .hero {
     text-align: center;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+}
+
+section div form {
+    padding: 0 10%;
+    display: grid;
+    grid-gap: 10px;
+}
+
+footer {
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
 }

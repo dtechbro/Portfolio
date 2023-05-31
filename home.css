@@ -17,8 +17,8 @@ body {
     padding: 0 5%;
 }
 
-.navlink {
-    margin-left: -50px;
+.navl ink {
+    /* margin-left: -50px; */
 }
 
 ul {
@@ -44,12 +44,14 @@ li a {
 section div form {
     padding: 0 10%;
     display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
 }
 
 footer {
     text-align: center;
 }
+
 footer a {
     text-decoration: none;
 }

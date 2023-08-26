@@ -6,7 +6,7 @@
 
 body {
     color: white;
-    background: rgb(22, 20, 41);
+    background: #1c1c1c;
     font-family: 'poppins';
 }
 
@@ -35,19 +35,4 @@ li a {
 
 .hero {
     text-align: center;
-}
-
-section div form {
-    padding: 0 10%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-}
-
-footer {
-    text-align: center;
-}
-
-footer a {
-    text-decoration: none;
 }

@@ -1,38 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --stroke: #f1f1f1;
+    --bg: #1c1c1c;
+}
+
 body {
     color: white;
-    background: #1c1c1c;
+    background: var(--bg);
     font-family: 'poppins';
 }
 
-.navbar {
+main {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5%;
+    column-gap: 25px;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.hero-img img {
+    height: 100vh;
+}
+
+.bio {
+    margin-right: 7%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+
 }
 
-li a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: white;
-}
-
-.hero {
-    text-align: center;
+.bio h1 {
+    font-family: 'Alkatra';
 }

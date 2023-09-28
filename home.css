@@ -8,6 +8,7 @@
 
 :root {
     --stroke: #f1f1f1;
+    --white: #ffffff;
     --bg: #1c1c1c;
 }
 
@@ -26,15 +27,116 @@ main {
     height: 100vh;
 }
 
+.img-mobile {
+    display: none;
+}
+
 .bio {
     margin-right: 7%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     row-gap: 20px;
-
 }
 
 .bio h1 {
     font-family: 'Alkatra';
+    margin-bottom: 3rem;
 }
+
+.bio p {
+    margin-bottom: 0.75rem;
+}
+
+.socials a {
+    color: var(--stroke);
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.socials a i {
+    font-size: x-large;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Styles for tablet screens */
+    
+    main {
+        margin: 20px;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .bio {
+        margin: 0;
+        align-items: center;
+        row-gap: 0;
+    }
+
+    .hero-img img {
+        width: 550px;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .bio h1 {
+        margin-bottom: 1rem;
+    }
+
+    .bio-info {
+        margin-bottom: 2rem;
+    }
+
+    .big-img {
+        display: none;
+    }
+
+    .img-mobile {
+        display: block;
+    }
+  }
+  
+
+
+@media (max-width: 767px) {
+    /* Styles for mobile devices */
+    /* This will apply styles for screens up to 767 pixels wide */
+
+    main {
+        margin: 20px;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .bio {
+        margin: 0;
+        align-items: center;
+        row-gap: 0;
+    }
+
+    .hero-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .bio h1 {
+        margin-bottom: 1rem;
+    }
+
+    .bio-info {
+        margin-bottom: 2rem;
+    }
+
+    .big-img {
+        display: none;
+    }
+
+    .img-mobile {
+        display: block;
+    }
+  }
+  

@@ -7,9 +7,14 @@
 }
 
 :root {
-    --stroke: #f1f1f1;
+    --stroke: #989898;
     --white: #ffffff;
     --bg: #1c1c1c;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
 }
 
 body {
@@ -18,12 +23,18 @@ body {
     font-family: 'poppins';
 }
 
+.stroke {
+    background: var(--stroke);
+    height: 1.5px;
+    margin: 2rem 0;
+}
+
 main {
     display: flex;
     column-gap: 25px;
 }
 
-.hero-img img {
+.hero-img .big-img {
     height: 100vh;
 }
 
@@ -49,7 +60,7 @@ main {
 }
 
 .socials a {
-    color: var(--stroke);
+    color: var(--white);
     text-decoration: none;
     margin-right: 20px;
 }
@@ -58,7 +69,80 @@ main {
     font-size: x-large;
 }
 
+.project-wrapper {
+    margin: 0 10%;
+}
 
+.project-wrapper h2, .skillset-wrapper h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.projects article {
+    padding: 5px;
+    border: 2px dashed var(--stroke);
+}
+
+.projects img {
+    width: 100%;
+}
+
+.projects .active_links {
+    float: right;
+    display: flex;
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+.active_links a i {
+    font-size: 2rem;
+}
+
+.active_links a i:hover {
+    color: aqua;
+}
+
+.skillset-wrapper {
+    background: var(--white);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.technologies {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 15px;
+}
+
+.contact {
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    column-gap: 25px;
+}
+
+.my-copy {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+footer p {
+    color: #aeaeae;
+}
+
+/* media query for smaller screen size - tablet & ipads */
 
 @media (min-width: 768px) and (max-width: 991px) {
     /* Styles for tablet screens */
@@ -100,6 +184,7 @@ main {
   }
   
 
+/* media query for mobile screen size */
 
 @media (max-width: 767px) {
     /* Styles for mobile devices */
@@ -137,6 +222,12 @@ main {
 
     .img-mobile {
         display: block;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
   }
   

@@ -9,15 +9,16 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="home.css">
-    <link rel="shortcut icon" href="./Images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./Images/assets/favicon.png" type="image/x-icon">
 
 </head>
 <body>
+    <!-- Hero section -->
 
     <main class="hero">
         <div class="hero-img">
-            <img src="./Images/face_card.png" alt="My personal image" class="big-img">
-            <img src="./Images/image_mobile.jpg" alt="" class="img-mobile">
+            <img src="./Images/assets/face_card.jpg" alt="My personal image" class="big-img">
+            <img src="./Images/assets/image_mobile.jpg" alt="" class="img-mobile">
         </div>
 
         <div class="bio">
@@ -26,11 +27,13 @@
             <div class="bio-info">
                 <p>Hi, my name is Olaoye Muhammad-Nabeel - <i>dtechbro</i> :)</p>
             
-                <p>I am a Frontend Engineer and UI Designer.</p>
+                <p>I am a Frontend Engineer and UI Designer.
+                    I like to craft solid and scalable frontend products with great user experiences.
+                </p>
             </div>
 
             <div class="socials">
-                <a href="https://instagram.com/detechbro/" target="_blank">
+                <a href="https://instagram.com/detechbro" target="_blank">
                     <i class="bi bi-instagram"></i>
                 </a>
 
@@ -56,10 +59,145 @@
             </div>
         </div>
     </main>
-    
-    <section>
-        
+
+    <div class="stroke"></div>
+
+    <!-- project section for my works -->
+
+    <section class="project-wrapper">
+            <div>
+                <h2>My projects</h2>
+            </div>
+
+            <div class="projects">
+                <article>
+                    <img src="./Images/projects/random_password.png" alt="random_password_generator">
+
+                    <p>A tool to generate random passwords if needed</p>
+
+                    <div class="active_links">
+                        <a href="https://random-swart-zeta.vercel.app/" target="_blank">
+                            <i class="bi bi-globe"></i>
+                        </a>
+                        
+                        <a href="https://github.com/dtechbro/random_password_generator.git">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="./Images/projects/notepad.png" alt="notepad">
+
+                    <p>Have your thought guided, use the site to take not of important things</p>
+
+                    <div class="active_links">
+                        <a href="https://random-swart-zeta.vercel.app/" target="_blank">
+                            <i class="bi bi-globe"></i>
+                        </a>
+                        
+                        <a href="https://github.com/dtechbro/notepad.git">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="./Images/projects/hngx-task1.png" alt="HNGX-Stage-one">
+
+                    <p>HNGX first task - I created a profile page and added a real time counter  </p>
+
+                    <div class="active_links">
+                        <a href="https://nabeelhngxs1.vercel.app/" target="_blank">
+                            <i class="bi bi-globe"></i>
+                        </a>
+                        
+                        <a href="https://github.com/dtechbro/HNGX-Stage-one">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="./Images/projects/web-wing.png" alt="web-wing hero section">
+
+                    <p>Web-wing is web agency platform that builds technical solutions to clients - This is a team project with other developers and designers</p>
+
+                    <div class="active_links">
+                        <a href="https://web-wing-geekhive-team-project-one.netlify.app" target="_blank">
+                            <i class="bi bi-globe"></i>
+                        </a>
+                        
+                        <a href="#">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
     </section>
+
+    <div class="stroke"></div>
+
+    <!-- <section class="skillset-wrapper">
+        <div>
+            <h2>Skills and Technologies I work with</h2>
+        </div>
+
+        <div class="technologies">
+            <img src="./Images/assets/tech/html.svg" alt="html">
+
+            <img src="./Images/assets/tech/css.svg" alt="css">
+
+            <img src="./Images/assets/tech/javascript.svg" alt="javascript">
+
+            <img src="./Images/assets/tech/git.svg" alt="git">
+
+            <img src="./Images/assets/tech/tailwind.svg" alt="">
+
+            <img src="./Images/assets/tech/reactjs.svg" alt="reactjs">
+
+            <img src="./Images/assets/tech/node.svg" alt="nodejs">
+        </div>
+    </section> -->
+
+    <!-- <section class="contact">
+        <div class="conatct_info">
+            <h2>Contact Me</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, obcaecati.</p>
+        </div>
+
+
+        form i might use later on if really needed
+
+        <div>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br>
+        
+                <input type="submit" value="Submit">
+            </form>
+        
+        </div>
+    </section> -->
+
+    <footer>
+
+        <div class="my-copy">
+            <!-- <hr> -->
+
+            <p>© 2023 - All rights reserved | Designed by <a href="https://github.com/dtechbro">Muhammad-Nabeel</a></p>
+        </div>
+    </footer>
+
+
+<script src="./script/form.js"></script>
 
 </body>
 </html>

@@ -23,9 +23,16 @@ body {
     font-family: 'poppins';
 }
 
-.stroke {
-    background: var(--stroke);
-    height: 1.5px;
+.buy-me-coffee {
+    position: absolute;
+    right: 3%;
+    bottom: 5%;
+    position: fixed;
+    z-index: 99;
+}
+
+hr {
+    border: 0.5px solid var(--stroke);
     margin: 2rem 0;
 }
 
@@ -181,6 +188,10 @@ footer p {
     .img-mobile {
         display: block;
     }
+
+    .project-wrapper {
+        margin: 0 5%;
+    }
   }
   
 
@@ -222,6 +233,10 @@ footer p {
 
     .img-mobile {
         display: block;
+    }
+
+    .project-wrapper {
+        margin: 0 2.5%;
     }
 
     .projects {

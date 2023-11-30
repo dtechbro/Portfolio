@@ -229,5 +229,11 @@ footer p {
         grid-template-columns: 1fr;
         gap: 20px;
     }
+
+    .my-copy p {
+        padding: 0 15px;
+        font-size: 14px;
+        text-align: center;
+    }
   }
   

@@ -21,6 +21,7 @@ body {
     color: white;
     background: var(--bg);
     font-family: 'poppins';
+    scroll-behavior: smooth;
 }
 
 .buy-me-coffee {

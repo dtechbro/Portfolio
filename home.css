@@ -123,18 +123,21 @@ main {
 }
 
 .skillset-wrapper {
-    background: var(--white);
-    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .technologies {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.technologies p {
+    padding: 8px 22px;
+    background: #111111;
+    border-radius: 6px;
 }
 
 .contact {

@@ -126,25 +126,21 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .technologies {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
+    width: 90%;
 }
 
 .technologies p {
-    padding: 8px 22px;
+    padding: 10px 30px;
     background: #111111;
     border-radius: 6px;
-}
-
-.contact {
-    padding: 0 10%;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    column-gap: 25px;
 }
 
 .my-copy {
@@ -210,8 +206,8 @@ footer p {
     .projects {
         gap: 1rem;
     }
-  }
-  
+}
+
 
 /* media query for mobile screen size */
 
@@ -235,7 +231,19 @@ footer p {
     .hero-img img {
         width: 80vw;
         height: auto;
+        border: 2px solid transparent;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); /* Initial box shadow */
+        animation: glow 1.5s infinite alternate; /* Apply animation */
     }
+
+    @keyframes glow {
+        from {
+          box-shadow: 0 0 10px 0 rgba(26, 108, 250, 0.5); /* Initial box shadow */
+        }
+        to {
+          box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5); /* Final box shadow (glow effect) */
+        }
+      }
 
     .bio h1 {
         margin-bottom: 1rem;
@@ -253,6 +261,10 @@ footer p {
         display: block;
     }
 
+    .project-wrapper h2, .skillset-wrapper h2 {
+        font-size: 24px;
+    }
+
     .project-wrapper {
         margin: 0 2.5%;
     }
@@ -268,5 +280,4 @@ footer p {
         font-size: 14px;
         text-align: center;
     }
-  }
-  
+}

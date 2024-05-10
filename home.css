@@ -105,31 +105,35 @@ main {
     justify-content: space-between;
     padding: 5px;
     border: 2px dashed var(--stroke);
-    gap: 5px;
+    gap: 2rem;
 }
 
 .projects img {
     width: 100%;
 }
 
-.projects .active_links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 10px;
+.projects article strong {
+    text-align: center;
+}
+
+.projects .used-tech {
+    color: #bababa;
+    text-align: center;
+    margin-top: -1.5rem;
 }
 
 .projects .proj-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #000;
+    background: #111111;
     padding: 10px 40px;
     border-radius: 8px;
     gap: 15px;
+    width: 100%;
 }
 
-.active_links a i {
+.proj-link i {
     font-size: 1.5rem;
 }
 
@@ -210,16 +214,16 @@ footer p {
         display: block;
     }
 
-    .buy-me-coffee {
-        display: none;
-    }
-
     .project-wrapper {
         margin: 0 5%;
     }
 
     .projects {
         gap: 1rem;
+    }
+
+    .proj-link {
+        font-size: 20px;
     }
 }
 
